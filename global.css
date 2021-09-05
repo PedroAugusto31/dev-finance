@@ -13,6 +13,7 @@
 	--box-color: #ffffff;
 	--shadow-green: #2d4a22;
 	--green: #49aa26;
+	--red: #e92929;
 }
 
 #green-background {
@@ -45,7 +46,8 @@ main {
 h1,
 h2,
 p,
-div {
+div,
+th {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 }
@@ -82,30 +84,29 @@ div {
 	margin-bottom: 0.9rem;
 }
 
-.entrys {
+.transations {
 	width: 70rem;
 	display: flex;
 	flex-direction: column;
-	margin-top: 4rem;
+	margin: 4rem 2rem 0rem 0rem;
 }
 
 #specs {
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
-	margin: 0rem 0rem 1.2rem 1.5rem;
+	margin: 0rem 0rem 1.2rem 2rem;
 	color: var(--text);
 }
 
-.spec-box div {
-	width: 100%;
-	margin-bottom: 0.5rem;
-	border-radius: 5px;
-	padding: 1.2rem 0rem 1.2rem 2rem;
-	color: var(--title);
-	background-color: var(--box-color);
+th {
+	color: var(--text);
 }
 
-.spec-box:nth-child(1) {
-	margin-top: 1.2rem;
+.entry {
+	color: var(--green);
+}
+
+.exit {
+	color: var(--red);
 }
