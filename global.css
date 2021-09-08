@@ -47,7 +47,8 @@ h1,
 h2,
 p,
 div,
-th {
+th,
+td {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 }
@@ -100,7 +101,19 @@ th {
 }
 
 th {
+	width: calc(1120px / 3);
 	color: var(--text);
+}
+
+tbody tr {
+	height: 4rem;
+	background-color: var(--box-color);
+	border-radius: 50%;
+	margin-bottom: 5rem;
+}
+
+td {
+	text-align: center;
 }
 
 .entry {
