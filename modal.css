@@ -1,0 +1,94 @@
+.modal-wrapper.active {
+	visibility: visible;
+	opacity: 1;
+	animation: openModal 0.5s;
+}
+
+.modal-wrapper {
+	z-index: 2;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(4, 9, 17, 0.8);
+
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.modal {
+	width: 35.5rem;
+	height: 21.4rem;
+	border-radius: 5px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+.modal input {
+	height: 3rem;
+	padding: 1rem;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+}
+
+h1,
+input,
+input::placeholder,
+button {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: var(--title);
+}
+
+.modal p {
+	font-size: small;
+	color: var(--text);
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons button {
+	width: 16rem;
+	height: 3.5rem;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.buttons button:nth-child(1) {
+	margin-right: 1rem;
+	background-color: transparent;
+	color: var(--red);
+	border-color: var(--red);
+}
+.buttons button:nth-child(2) {
+	background-color: var(--green);
+	color: var(--box-color);
+	border-color: transparent;
+}
+
+@keyframes openModal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes modalBox {
+	from {
+		margin-top: 2rem;
+	}
+
+	to {
+		margin-top: 0;
+	}
+}

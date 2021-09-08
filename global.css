@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-:root {
+html {
 	--background: #f0f2f5;
 	--text: #969cb2;
 	--title: #363f5f;
@@ -72,13 +72,21 @@ td {
 	align-items: center;
 }
 
+.info {
+	color: var(--title);
+}
+
 .money-box h2 {
 	font-size: 2.2rem;
+	color: var(--title);
 }
 
 .money-box:nth-child(3) {
-	color: var(--box-color);
 	background-color: var(--green);
+}
+.money-box:nth-child(3) h2,
+.money-box:nth-child(3) .info {
+	color: var(--box-color);
 }
 
 .info {
@@ -108,12 +116,16 @@ th {
 tbody tr {
 	height: 4rem;
 	background-color: var(--box-color);
-	border-radius: 50%;
+	color: var(--title);
+	border-radius: 5px;
 	margin-bottom: 5rem;
 }
 
 td {
 	text-align: center;
+}
+td:nth-child(3) {
+	color: var(--text);
 }
 
 .entry {
@@ -122,4 +134,17 @@ td {
 
 .exit {
 	color: var(--red);
+}
+
+button {
+	width: 4rem;
+	height: 4rem;
+	align-self: flex-end;
+	border: solid #000;
+	border-radius: 50%;
+	background-color: var(--box-color);
+}
+
+button:hover {
+	cursor: pointer;
 }
