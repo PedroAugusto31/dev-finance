@@ -17,23 +17,23 @@
 	<body>
 		<div id="green-background"></div>
 		<main>
-			<h1 id="title">dev.finance $</h1>
+			<div id="title">dev<strong>.</strong>finance <strong>$</strong></div>
 			<section>
-				<div class="money-box">
+				<div class="money-box entrys">
 					<div>
 						<p class="info">Entrada</p>
 						<img src="./public/images/Entradas.svg" alt="Entradas" />
 					</div>
 					<h2>R$ 17.400,00</h2>
 				</div>
-				<div class="money-box">
+				<div class="money-box exits">
 					<div>
 						<p class="info">Saida</p>
 						<img src="./public/images/Saidas.svg" alt="Saídas" />
 					</div>
 					<h2>R$ 1.259,00</h2>
 				</div>
-				<div class="money-box">
+				<div class="money-box total">
 					<div>
 						<p class="info">Total</p>
 						<img src="./public/images/Total.svg" alt="Total" />
@@ -74,19 +74,19 @@
 					</tbody>
 				</table>
 			</section>
-			<button class="modal-button">
-				<img src="https://img.icons8.com/android/30/000000/plus.png" />
-			</button>
 		</main>
+		<button class="modal-button">
+			<img src="https://img.icons8.com/android/30/000000/plus.png" />
+		</button>
 		<div class="modal-wrapper">
 			<div class="modal">
-				<h1>Nova transação</h1>
+				<h2>Nova transação</h2>
 				<input type="text" id="descrition" placeholder="Descrição" />
 				<input type="number" id="descrition" placeholder="0,00" />
 				<p>
 					Use o sinal -(negativo) para despesas e ,(vírgula) para casas decimais
 				</p>
-				<input type="date" />
+				<input type="text" placeholder="dd/mm/yyyy" />
 				<div class="buttons">
 					<button class="cancel-button">Cancelar</button>
 					<button>Salvar</button>
@@ -94,5 +94,6 @@
 			</div>
 		</div>
 		<script src="main.js"></script>
+		<script src="modal.js"></script>
 	</body>
 </html>
