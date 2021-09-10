@@ -70,7 +70,7 @@ button {
 	margin-right: 1rem;
 	background-color: transparent;
 	color: var(--red);
-	border-color: var(--red);
+	border: var(--red) solid;
 }
 .buttons button:nth-child(2) {
 	background-color: var(--green);
