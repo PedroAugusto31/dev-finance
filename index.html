@@ -81,16 +81,19 @@
 		<div class="modal-wrapper">
 			<div class="modal">
 				<h2>Nova transação</h2>
-				<input type="text" id="descrition" placeholder="Descrição" />
-				<input type="number" id="descrition" placeholder="0,00" />
-				<p>
-					Use o sinal -(negativo) para despesas e ,(vírgula) para casas decimais
-				</p>
-				<input type="text" placeholder="dd/mm/yyyy" />
-				<div class="buttons">
-					<button class="cancel-button">Cancelar</button>
-					<button class="save-button">Salvar</button>
-				</div>
+				<form action="">
+					<input type="text" id="descrition" placeholder="Descrição" />
+					<input type="number" id="value" placeholder="0,00" />
+					<p>
+						Use o sinal -(negativo) para despesas e ,(vírgula) para casas
+						decimais
+					</p>
+					<input type="text" id="date" placeholder="dd/mm/yyyy" />
+					<div class="buttons">
+						<button class="cancel-button">Cancelar</button>
+						<button class="save-button" type="submit">Salvar</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<script src="main.js"></script>
