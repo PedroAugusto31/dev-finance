@@ -96,3 +96,9 @@ button {
 		margin-top: 0;
 	}
 }
+
+@media (max-width: 550px) {
+	.modal {
+		width: 90%;
+	}
+}
