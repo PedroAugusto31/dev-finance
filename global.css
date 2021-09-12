@@ -166,7 +166,7 @@ button:hover {
 	filter: brightness(1.1);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
 	.boxes {
 		display: flex;
 		align-items: center;
