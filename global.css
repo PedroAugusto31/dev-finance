@@ -115,7 +115,7 @@ button {
 }
 
 th {
-	width: calc(1120px / 3);
+	width: calc(70rem / 3);
 	color: var(--text);
 }
 

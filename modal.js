@@ -43,6 +43,7 @@ const addTransaction = (transaction) => {
 const init = () => {
 	tBody.innerHTML = "";
 	transactions.forEach(addTransaction);
+	iniciar(transactions);
 };
 
 init();
@@ -75,16 +76,6 @@ form.addEventListener("submit", (e) => {
 	descrition.value = "";
 	money.value = "";
 	date.value = "";
-
-	let numberTest = 0;
-
-	const teste = (test) => {
-		numberTest += parseInt(test.value);
-	};
-
-	transactions.forEach(teste);
-
-	console.log(numberTest);
 
 	close();
 });
